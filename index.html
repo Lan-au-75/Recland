@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecLand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="app">
+
+        <div id="top"></div>
+        <!-- Header -->
+        <header class="header">
+
+            <div class="grid header-wrapper">
+
+                <!-- Header left -->
+                <a href="/" class="logo">
+                    <img src="/assets/img/logo-Recland.png" alt="logo-Recland">
+                </a>
+
+                <!-- Header right -->
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="btn btn-def header__link">Tất Cả Các Job</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="btn btn--line header__link">Đăng ký</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="btn btn--primary header__link">Đăng Nhập</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </header>
+        <!-- end Header -->
+
+        <!-- Container -->
+        <section class="container">
+            <!-- Banner -->
+            <div class="banner" style="background-image: url(/assets/img/Banner.png) ;"></div>
+
+            <!-- From Search -->
+            <div class="grid from-wrapper">
+                <div class="from-search">
+                    <svg width="18" height="18" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 20.5126C15.9706 20.5126 20 16.4832 20 11.5126C20 6.54207 15.9706 2.51263 11 2.51263C6.02944 2.51263 2 6.54207 2 11.5126C2 16.4832 6.02944 20.5126 11 20.5126Z"
+                            stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M18.9299 21.2024C19.4599 22.8024 20.6699 22.9624 21.5999 21.5624C22.4499 20.2824 21.8899 19.2324 20.3499 19.2324C19.2099 19.2224 18.5699 20.1124 18.9299 21.2024Z"
+                            stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <input type="text" placeholder="Nhập vị trí hoặc từ khóa...">
+                </div>
+
+                <!-- From location -->
+
+
+                <div class="from-location">
+                    <div>
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.5 11.0131C14.5 9.63187 13.3808 8.51263 12.0005 8.51263C10.6192 8.51263 9.5 9.63187 9.5 11.0131C9.5 12.3934 10.6192 13.5126 12.0005 13.5126C13.3808 13.5126 14.5 12.3934 14.5 11.0131Z"
+                                stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.9995 21.5126C10.801 21.5126 4.5 16.411 4.5 11.0759C4.5 6.89927 7.8571 3.51263 11.9995 3.51263C16.1419 3.51263 19.5 6.89927 19.5 11.0759C19.5 16.411 13.198 21.5126 11.9995 21.5126Z"
+                                stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <span value="Chọn địa điểm">Chọn địa điểm</span>
+                    </div>
+
+
+
+
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.92 9.46265L13.4 15.9826C12.63 16.7526 11.37 16.7526 10.6 15.9826L4.07996 9.46265"
+                            stroke="#999999" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+
+                </div>
+
+                <div class="btn btn--primary from-btn">Tìm Kiếm</div>
+            </div>
+
+            <!-- list suggest -->
+
+            <div class="grid suggest-wrapper">
+                <span>Đề Xuất:</span>
+                <ul class="suggest-list">
+                    <li class="suggest-item">Reactjs</li>
+                    <li class="suggest-item">VueJS</li>
+                    <li class="suggest-item">Angular</li>
+                    <li class="suggest-item">Design</li>
+                    <li class="suggest-item">.NET</li>
+                    <li class="suggest-item">PHP</li>
+                    <li class="suggest-item">java</li>
+                    <li class="suggest-item">Mobile</li>
+                </ul>
+            </div>
+
+            <!-- end list suggest -->
+
+            <!-- list job -->
+            <div class="grid job-wrapper">
+                <header class="job-header">
+                    <div class="job-header__wrapper">
+                        <div class="job-header__iconWrapper">
+                            <div class="job-header__icon">
+                                <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.2867 6.60341C24.2867 14.855 16.6522 19.7213 13.2317 20.885C12.8262 21.0261 12.1738 21.0261 11.7683 20.885C10.3048 20.3913 8.06564 19.21 6.00275 17.3939C3.21696 14.9431 0.713272 11.3287 0.713272 6.60341C0.713272 2.95367 3.6401 0.00921631 7.25457 0.00921631C9.40563 0.00921631 11.3099 1.04946 12.5088 2.6363C13.6901 1.04946 15.5943 0.00921631 17.7454 0.00921631C18.6799 0.00921631 19.5614 0.203159 20.3725 0.555791C22.6822 1.57842 24.2867 3.88815 24.2867 6.60341Z"
+                                        fill="#FE4C4C" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h2>Jobs tốt nhất</h2>
+                    </div>
+
+                    <span>Xem Tất Cả</span>
+
+                </header>
+
+                <!-- job card -->
+
+                <ul class="job-list">
+                    <li class="job-card">
+                        <header class="job-card__header">
+                            <div>
+                                <img src="./assets/img/logo-job1.png" alt="">
+                                <h2>Data Engineer </h2>
+                            </div>
+
+                            <span>Full-time</span>
+                        </header>
+
+                        <div class="job-card__content">
+
+                            <div>
+                                <h4>Hoa hồng</h4>
+                                <p>12,000,000 <span>VNĐ</span></p>
+
+                            </div>
+                            <div>
+                                <h4>Thưởng</h4>
+                                <p>50,000,000 <span>VNĐ</span></p>
+                            </div>
+
+                        </div>
+
+                        <footer class="job-card__footer">
+                            <div>
+                                <h4>Hà Nội</h4>
+                                <h4>Onboard</h4>
+                            </div>
+
+                            <button class="btn--secondary job-card__btn">PREMIUM</button>
+                        </footer>
+
+                    </li>
+                    <li class="job-card">
+                        <header class="job-card__header">
+                            <div>
+                                <img src="./assets/img/logo-job2.png" alt="">
+                                <h2>Junior PHP Developer ~ 15-2... </h2>
+                            </div>
+
+                            <span>Full-time</span>
+                        </header>
+
+                        <div class="job-card__content">
+
+                            <div>
+                                <h4>Hoa hồng</h4>
+                                <p>12,000,000 <span>VNĐ</span></p>
+
+                            </div>
+                            <div>
+                                <h4>Thưởng</h4>
+                                <p>50,000,000 <span>VNĐ</span></p>
+                            </div>
+
+                        </div>
+
+                        <footer class="job-card__footer">
+                            <div>
+                                <h4>Hà Nội</h4>
+                                <h4>Onboard</h4>
+                            </div>
+
+                            <button class="btn--secondary job-card__btn">PREMIUM</button>
+                        </footer>
+
+                    </li>
+                    <li class="job-card">
+                        <header class="job-card__header">
+                            <div>
+                                <img src="./assets/img/logo-job3.png" alt="">
+                                <h2>Senior PHP Developer ~ Upto 40M</h2>
+                            </div>
+
+                            <span>Full-time</span>
+                        </header>
+
+                        <div class="job-card__content">
+
+                            <div>
+                                <h4>Hoa hồng</h4>
+                                <p>12,000,000 <span>VNĐ</span></p>
+
+                            </div>
+                            <div>
+                                <h4>Thưởng</h4>
+                                <p>50,000,000 <span>VNĐ</span></p>
+                            </div>
+
+                        </div>
+
+                        <footer class="job-card__footer">
+                            <div>
+                                <h4>Hà Nội</h4>
+                                <h4>Onboard</h4>
+                            </div>
+
+                            <button class="btn--secondary job-card__btn">PREMIUM</button>
+                        </footer>
+
+                    </li>
+                    <li class="job-card">
+                        <header class="job-card__header">
+                            <div>
+                                <img src="./assets/img/logo-job4.png" alt="">
+                                <h2>Java Software Engineer (multiple positions)</h2>
+                            </div>
+
+                            <span>Full-time</span>
+                        </header>
+
+                        <div class="job-card__content">
+
+                            <div>
+                                <h4>Hoa hồng</h4>
+                                <p>12,000,000 <span>VNĐ</span></p>
+
+                            </div>
+                            <div>
+                                <h4>Thưởng</h4>
+                                <p>50,000,000 <span>VNĐ</span></p>
+                            </div>
+
+                        </div>
+
+                        <footer class="job-card__footer">
+                            <div>
+                                <h4>Hà Nội</h4>
+                                <h4>Onboard</h4>
+                            </div>
+
+                            <button class="btn--secondary job-card__btn">PREMIUM</button>
+                        </footer>
+
+                    </li>
+                    <li class="job-card">
+                        <header class="job-card__header">
+                            <div>
+                                <img src="./assets/img/logo-job5.png" alt="">
+                                <h2>Senior Fullstack Engineer</h2>
+                            </div>
+
+                            <span>Full-time</span>
+                        </header>
+
+                        <div class="job-card__content">
+
+                            <div>
+                                <h4>Hoa hồng</h4>
+                                <p>12,000,000 <span>VNĐ</span></p>
+
+                            </div>
+                            <div>
+                                <h4>Thưởng</h4>
+                                <p>50,000,000 <span>VNĐ</span></p>
+                            </div>
+
+                        </div>
+
+                        <footer class="job-card__footer">
+                            <div>
+                                <h4>Hà Nội</h4>
+                                <h4>Onboard</h4>
+                            </div>
+
+                            <button class="btn--secondary job-card__btn">PREMIUM</button>
+                        </footer>
+
+                    </li>
+                    <li class="job-card">
+                        <header class="job-card__header">
+                            <div>
+                                <img src="./assets/img/logo-job6.png" alt="">
+                                <h2>C++ Network Software Engineer</h2>
+                            </div>
+
+                            <span>Full-time</span>
+                        </header>
+
+                        <div class="job-card__content">
+
+                            <div>
+                                <h4>Hoa hồng</h4>
+                                <p>12,000,000 <span>VNĐ</span></p>
+
+                            </div>
+                            <div>
+                                <h4>Thưởng</h4>
+                                <p>50,000,000 <span>VNĐ</span></p>
+                            </div>
+
+                        </div>
+
+                        <footer class="job-card__footer">
+                            <div>
+                                <h4>Hà Nội</h4>
+                                <h4>Onboard</h4>
+                            </div>
+
+                            <button class="btn--secondary job-card__btn">PREMIUM</button>
+                        </footer>
+
+                    </li>
+                    <li class="job-card">
+                        <header class="job-card__header">
+                            <div>
+                                <img src="./assets/img/logo-job7.png" alt="">
+                                <h2>Junior PHP Developer ~ 15-2...</h2>
+                            </div>
+
+                            <span>Full-time</span>
+                        </header>
+
+                        <div class="job-card__content">
+
+                            <div>
+                                <h4>Hoa hồng</h4>
+                                <p>12,000,000 <span>VNĐ</span></p>
+
+                            </div>
+                            <div>
+                                <h4>Thưởng</h4>
+                                <p>50,000,000 <span>VNĐ</span></p>
+                            </div>
+
+                        </div>
+
+                        <footer class="job-card__footer">
+                            <div>
+                                <h4>Hà Nội</h4>
+                                <h4>Onboard</h4>
+                            </div>
+
+                            <button class="btn--secondary job-card__btn">PREMIUM</button>
+                        </footer>
+
+                    </li>
+                    <li class="job-card">
+                        <header class="job-card__header">
+                            <div>
+                                <img src="./assets/img/logo-job4.png" alt="">
+                                <h2>Junior PHP Developer ~ 15-2...</h2>
+                            </div>
+
+                            <span>Full-time</span>
+                        </header>
+
+                        <div class="job-card__content">
+
+                            <div>
+                                <h4>Hoa hồng</h4>
+                                <p>12,000,000 <span>VNĐ</span></p>
+
+                            </div>
+                            <div>
+                                <h4>Thưởng</h4>
+                                <p>50,000,000 <span>VNĐ</span></p>
+                            </div>
+
+                        </div>
+
+                        <footer class="job-card__footer">
+                            <div>
+                                <h4>Hà Nội</h4>
+                                <h4>Onboard</h4>
+                            </div>
+
+                            <button class="btn--secondary job-card__btn">PREMIUM</button>
+                        </footer>
+
+                    </li>
+                    <li class="job-card">
+                        <header class="job-card__header">
+                            <div>
+                                <img src="./assets/img/logo-job1.png" alt="">
+                                <h2>Junior PHP Developer ~ 15-2...</h2>
+                            </div>
+
+                            <span>Full-time</span>
+                        </header>
+
+                        <div class="job-card__content">
+
+                            <div>
+                                <h4>Hoa hồng</h4>
+                                <p>12,000,000 <span>VNĐ</span></p>
+
+                            </div>
+                            <div>
+                                <h4>Thưởng</h4>
+                                <p>50,000,000 <span>VNĐ</span></p>
+                            </div>
+
+                        </div>
+
+                        <footer class="job-card__footer">
+                            <div>
+                                <h4>Hà Nội</h4>
+                                <h4>Onboard</h4>
+                            </div>
+
+                            <button class="btn--secondary job-card__btn">PREMIUM</button>
+                        </footer>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- end list job -->
+
+
+            <!-- Intro -->
+            <div class="grid heading-wrapper">
+                <div>
+                    <h3 class="sub-heading">Why?</h3>
+                    <h2 class="heading">Tại Sao Lựa Chọn Recland?</h2>
+                </div>
+                <ul class="intro-list">
+                    <li class="intro-item">
+                        <img src="./assets/img/intro-search.png" alt="">
+                        <h3>Đa dạng việc làm, thêm nhiều lựa chọn hấp dẫn</h3>
+                        <p>Hơn 200+ việc làm IT, giúp các bạn REC có một kho việc làm để các bạn tìm kiếm, sale jobs đến
+                            những ứng viên phù hợp.</p>
+                    </li>
+
+                    <li class="intro-item">
+                        <img src="./assets/img/intro-dollar.png" alt="">
+                        <h3>Cơ chế hoa hồng hấp dẫn, rõ ràng và minh bạch</h3>
+                        <p>RecLand đem đến cho các bạn REC mức hoa hồng hấp dẫn, giúp cho các bạn REC có được mức thu
+                            nhập tương xứng mà không cần
+                            đến công ty làm việc</p>
+                    </li>
+
+                    <li class="intro-item">
+                        <img src="./assets/img/intro-network.png" alt="">
+                        <h3>Mở rộng network và học hỏi từ cộng đồng</h3>
+                        <p>RecLand cũng thường xuyên tổ chức những buổi chia sẻ, buổi offline nhằm giúp các bạn REC trau
+                            dồi, học hỏi và mở rộng
+                            được network trong lĩnh vực tuyển dụng.</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- end Intro -->
+
+            <!-- Partner -->
+
+            <div class="grid partner-wrapper">
+                <div class="heading">Đối Tác</div>
+                <ul class='partner-list'>
+                    <li class='partner-item'>
+                        <img src="./assets/img/partner1.png" alt="">
+                    </li>
+                    <li class='partner-item'>
+                        <img src="./assets/img/partner2.png" alt="">
+                    </li>
+                    <li class='partner-item'>
+                        <img src="./assets/img/partner3.png" alt="">
+                    </li>
+                    <li class='partner-item'>
+                        <img src="./assets/img/partner4.png" alt="">
+                    </li>
+                    <li class='partner-item'>
+                        <img src="./assets/img/partner5.png" alt="">
+                    </li>
+
+                </ul>
+            </div>
+            <!-- end Partner -->
+
+            <!-- process working -->
+            <div class="grid process-wrapper">
+                <div class="sub-heading">Quy trình làm việc</div>
+                <div class="heading">Hợp tác cùng RecLand</div>
+
+                <ul class="process-list">
+                    <li class="process-card">
+                        <div class="process-card__wrapper">
+                            <div class="process-card__iconWrapper">
+                                1
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <img src="/assets/img/process-add.png" alt="">
+                        </div>
+
+                        <h3>Tạo một tài khoản</h3>
+                        <p>Trở thành member trên RecLand</p>
+
+                    </li>
+
+                    <li class="process-card">
+                        <div class="process-card__wrapper">
+                            <div class="process-card__iconWrapper">
+                                2
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <img src="/assets/img/process-search.png" alt="">
+                        </div>
+
+                        <h3>Tìm kiếm công việc</h3>
+                        <p>Tìm kiếm công việc phù hợp để mời ứng viên</p>
+
+                    </li>
+
+                    <li class="process-card">
+                        <div class="process-card__wrapper">
+                            <div class="process-card__iconWrapper">
+                                3
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <img src="/assets/img/process-shield.png" alt="">
+                        </div>
+
+                        <h3>Giới thiệu ứng viên</h3>
+                        <p>Giới thiệu ứng viên vào các vị trí đang tuyển, process ứng viên và nhận kết quả</p>
+
+                    </li>
+
+                </ul>
+            </div>
+            <!-- end process working -->
+
+            <!-- sub Banner -->
+            <div class="grid subBanner-wrapper">
+                <div class="subBanner-left">
+                    <div class="job-header__iconWrapper">
+                        <div class="job-header__icon">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.2867 6.60341C24.2867 14.855 16.6522 19.7213 13.2317 20.885C12.8262 21.0261 12.1738 21.0261 11.7683 20.885C10.3048 20.3913 8.06564 19.21 6.00275 17.3939C3.21696 14.9431 0.713272 11.3287 0.713272 6.60341C0.713272 2.95367 3.6401 0.00921631 7.25457 0.00921631C9.40563 0.00921631 11.3099 1.04946 12.5088 2.6363C13.6901 1.04946 15.5943 0.00921631 17.7454 0.00921631C18.6799 0.00921631 19.5614 0.203159 20.3725 0.555791C22.6822 1.57842 24.2867 3.88815 24.2867 6.60341Z"
+                                    fill="#FE4C4C" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Bạn muốn đến với Recland</h3>
+                        <p>Chúng tôi sẽ giúp bạn thành công trên con đường Recer</p>
+                        </di>
+                    </div>
+
+                </div>
+
+                <div class="subBanner-right">
+                    <a href="#" class="btn btn--primary">Đăng Ký Ngay</a>
+                </div>
+                <!-- end sub Banner -->
+
+
+
+        </section>
+        <!-- end Container -->
+
+        <!-- Footer -->
+        <footer class=" footer">
+            <div class="grid footer-wrapper">
+                <form class="from-address">
+                    <input type="email" name="email" id="" placeholder="Enter your email address">
+                    <button type="submit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.4932 12.4382C11.4932 12.4382 -0.483412 9.96062 3.67854 7.55807C7.19069 5.53077 19.2946 2.04522 20.9856 2.94582C21.8862 4.63682 18.4007 16.7408 16.3734 20.2529C13.9708 24.4149 11.4932 12.4382 11.4932 12.4382Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11.4932 12.4382L20.9856 2.9458" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                </form>
+
+                <div>
+                    <div>
+                        <div class="footer__numberWrapper">
+                            <div class="footer__number">199</div>
+                        </div>
+                        <span>Công việc</span>
+                    </div>
+
+                    <div>
+                        <div class="footer__numberWrapper">
+                            <div class="footer__number">93</div>
+                        </div>
+                        <span class="footer__text">Công ty</span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="grid footer-wrapper">
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <img src="./assets/img/logo-Recland.png" alt="">
+                        <ul class="footer__socialList">
+                            <li class="footer__socialItem">
+                                <a href="#" class="footer_socialLink">
+
+
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="16" cy="16" r="14" fill="#999999" />
+                                        <path
+                                            d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__socialItem">
+                                <a href="#" class="footer_socialLink">
+
+
+                                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6003 28C9.36533 28 6.34976 27.0591 3.81158 25.4356C5.96658 25.5751 9.76965 25.2411 12.1352 22.9848C8.57666 22.8215 6.97185 20.0923 6.76252 18.926C7.06488 19.0426 8.50689 19.1826 9.32092 18.856C5.22748 17.8296 4.59951 14.2373 4.73906 13.141C5.50658 13.6775 6.80904 13.8641 7.32072 13.8174C3.50638 11.0882 4.87861 6.98276 5.5531 6.09635C8.29041 9.88867 12.3928 12.0186 17.468 12.137C17.3723 11.7174 17.3217 11.2804 17.3217 10.8316C17.3217 7.61092 19.925 5 23.1363 5C24.8141 5 26.326 5.71275 27.3873 6.85284C28.5085 6.59011 30.1959 5.97507 31.0208 5.4432C30.605 6.93611 29.3105 8.18149 28.5275 8.64308C28.5211 8.62731 28.534 8.65878 28.5275 8.64308C29.2153 8.53904 31.0764 8.18137 31.8116 7.68256C31.448 8.52125 30.0756 9.91573 28.9493 10.6964C29.1589 19.9381 22.0881 28 12.6003 28Z"
+                                            fill="#999999" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__socialItem">
+                                <a href="#" class="footer_socialLink">
+
+                                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.62318" y="2" width="28" height="28" rx="14" fill="#999999" />
+                                        <path
+                                            d="M13.2417 9.69215C13.2417 10.6267 12.4317 11.3843 11.4325 11.3843C10.4332 11.3843 9.62318 10.6267 9.62318 9.69215C9.62318 8.7576 10.4332 8 11.4325 8C12.4317 8 13.2417 8.7576 13.2417 9.69215Z"
+                                            fill="white" />
+                                        <path d="M9.87061 12.6281H12.9634V22H9.87061V12.6281Z" fill="white" />
+                                        <path
+                                            d="M17.9428 12.6281H14.85V22H17.9428C17.9428 22 17.9428 19.0496 17.9428 17.2049C17.9428 16.0976 18.3208 14.9855 19.8294 14.9855C21.5342 14.9855 21.5239 16.4345 21.516 17.5571C21.5056 19.0244 21.5304 20.5219 21.5304 22H24.6232V17.0537C24.597 13.8954 23.774 12.4401 21.0665 12.4401C19.4586 12.4401 18.4619 13.1701 17.9428 13.8305V12.6281Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__socialItem">
+                                <a href="#" class="footer_socialLink">
+                                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.43478" y="2" width="28" height="28" rx="6" fill="#999999" />
+                                        <rect x="2.43478" y="2" width="28" height="28" rx="6" fill="#999999" />
+                                        <rect x="2.43478" y="2" width="28" height="28" rx="6" fill="#999999" />
+                                        <path
+                                            d="M23.4348 10.5C23.4348 11.3284 22.7632 12 21.9348 12C21.1064 12 20.4348 11.3284 20.4348 10.5C20.4348 9.67157 21.1064 9 21.9348 9C22.7632 9 23.4348 9.67157 23.4348 10.5Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16.4348 21C19.1962 21 21.4348 18.7614 21.4348 16C21.4348 13.2386 19.1962 11 16.4348 11C13.6734 11 11.4348 13.2386 11.4348 16C11.4348 18.7614 13.6734 21 16.4348 21ZM16.4348 19C18.0916 19 19.4348 17.6569 19.4348 16C19.4348 14.3431 18.0916 13 16.4348 13C14.7779 13 13.4348 14.3431 13.4348 16C13.4348 17.6569 14.7779 19 16.4348 19Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.43478 15.6C6.43478 12.2397 6.43478 10.5595 7.08874 9.27606C7.66399 8.14708 8.58187 7.2292 9.71084 6.65396C10.9943 6 12.6745 6 16.0348 6H16.8348C20.1951 6 21.8753 6 23.1587 6.65396C24.2877 7.2292 25.2056 8.14708 25.7808 9.27606C26.4348 10.5595 26.4348 12.2397 26.4348 15.6V16.4C26.4348 19.7603 26.4348 21.4405 25.7808 22.7239C25.2056 23.8529 24.2877 24.7708 23.1587 25.346C21.8753 26 20.1951 26 16.8348 26H16.0348C12.6745 26 10.9943 26 9.71084 25.346C8.58187 24.7708 7.66399 23.8529 7.08874 22.7239C6.43478 21.4405 6.43478 19.7603 6.43478 16.4V15.6ZM16.0348 8H16.8348C18.5479 8 19.7125 8.00156 20.6127 8.0751C21.4895 8.14674 21.9379 8.27659 22.2507 8.43597C23.0034 8.81947 23.6153 9.43139 23.9988 10.184C24.1582 10.4968 24.288 10.9452 24.3597 11.8221C24.4332 12.7223 24.4348 13.8868 24.4348 15.6V16.4C24.4348 18.1132 24.4332 19.2777 24.3597 20.1779C24.288 21.0548 24.1582 21.5032 23.9988 21.816C23.6153 22.5686 23.0034 23.1805 22.2507 23.564C21.9379 23.7234 21.4895 23.8533 20.6127 23.9249C19.7125 23.9984 18.5479 24 16.8348 24H16.0348C14.3216 24 13.157 23.9984 12.2569 23.9249C11.38 23.8533 10.9316 23.7234 10.6188 23.564C9.86617 23.1805 9.25425 22.5686 8.87076 21.816C8.71138 21.5032 8.58153 21.0548 8.50989 20.1779C8.43634 19.2777 8.43478 18.1132 8.43478 16.4V15.6C8.43478 13.8868 8.43634 12.7223 8.50989 11.8221C8.58153 10.9452 8.71138 10.4968 8.87076 10.184C9.25425 9.43139 9.86617 8.81947 10.6188 8.43597C10.9316 8.27659 11.38 8.14674 12.2569 8.0751C13.157 8.00156 14.3216 8 16.0348 8Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-item">
+                        <h3>Địa chỉ</h3>
+                        <span>Tòa nhà AC, 78 Duy Tân, Quận Cầu Giấy, Hà Nội</span>
+                    </li>
+
+                    <li class="footer-item">
+                        <h3>Liên hệ</h3>
+                        <span>0369 713 819 </span>
+                        <span>luat.nguyen@recland.co</span>
+                    </li>
+
+                    <li class="footer-item">
+                        <h3>Menu</h3>
+                        <span>Trang chủ </span>
+                        <span>Tìm kiếm công việc</span>
+                        <span>Sitemap</span>
+                    </li>
+
+                    <li class="footer-item">
+                        <h3>Tài khoản của tôi</h3>
+                        <span>Tổng quan </span>
+                        <span>Kho CV</span>
+                        <span>Thông tin cá nhân</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="grid footer-coppy">
+                <span>Copyright © 2022 Recland.co</span>
+            </div>
+
+        </footer>
+        <!-- end Footer -->
+
+        <div class="grid btn-scrollTop">
+            <a href="#top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.0701 9.57L12.0001 3.5L5.93005 9.57" stroke="white" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 20.5V3.67004" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+
+        </div>
+
+        </div>
+
+
+</body>
+
+</html>
